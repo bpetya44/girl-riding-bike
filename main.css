@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;   
+}
+
+#front-wheel, 
+#back-wheel {
+    animation: wheel 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#girl-bike{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#hair{
+    animation: hairs 1s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#clouds, 
+#grey-building,
+#pink-building {
+    animation: cloud 3s ease-in-out infinite alternate;
+}
+
+@keyframes wheel {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike {
+    from{
+        transform: rotateX(0deg)
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+
+@keyframes hairs {
+    from {
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(25%);
+    }
+}
+
+@keyframes cloud {
+    from {
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-5%);
+    }
+}
