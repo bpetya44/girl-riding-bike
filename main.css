@@ -29,7 +29,7 @@ body {
 #clouds, 
 #grey-building,
 #pink-building {
-    animation: cloud 3s ease-in-out infinite alternate;
+    animation: 7s ease-in infinite reverse both running cloud;
 }
 
 @keyframes wheel {
@@ -61,9 +61,9 @@ body {
 
 @keyframes cloud {
     from {
-        transform: translateX(0%);
+        transform: translateX(-100%);
     }
     to{
-        transform: translateX(-5%);
+        transform: translateX(100%);
     }
 }
